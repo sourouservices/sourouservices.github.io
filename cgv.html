@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CGV - Sourou Services</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+  /* --- Variables & Reset (issus de index.html) --- */
+  :root {
+    --primary-color: #1a73e8;
+    --secondary-color: #1e3a8a;
+    --light-bg: #f4f6f8;
+    --dark-text: #333;
+    --light-text: #666;
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --card-radius: 12px;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--light-bg);
+    color: var(--dark-text);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* --- Barre de Navigation (pour les pages secondaires) --- */
+  .top-bar {
+    background: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .top-bar .logo {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  .cta-nav {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+  }
+
+  .cta-nav:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+  }
+
+  /* --- Sections (style de index.html) --- */
+  main {
+    width: 100%;
+    overflow-x: hidden;
+    flex-grow: 1; /* Fait en sorte que le main grandisse pour pousser le footer en bas */
+  }
+
+  section {
+    max-width: 1100px;
+    margin: 40px auto; /* Marge réduite pour page secondaire */
+    padding: 40px;
+    background: #fff;
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+  }
+
+  h2 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 10px;
+    display: inline-block;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+  }
+
+  /* --- Styles spécifiques au contenu des CGV --- */
+  #cvg-content h3 {
+    font-size: 1.6em;
+    color: var(--dark-text);
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+  }
+
+  #cvg-content p, 
+  #cvg-content ul {
+    color: var(--light-text);
+    margin-bottom: 15px;
+    line-height: 1.7;
+  }
+
+  #cvg-content ul {
+    list-style-type: disc;
+    padding-left: 40px;
+  }
+  
+  #cvg-content li {
+      margin-bottom: 8px;
+  }
+
+  #cvg-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  #cvg-content a:hover {
+    text-decoration: underline;
+  }
+  
+  #cvg-content strong {
+      color: var(--dark-text);
+  }
+
+  /* --- Footer (style de index.html) --- */
+  footer {
+    text-align: center;
+    padding: 30px;
+    background: var(--dark-text);
+    color: #aaa;
+    margin-top: 60px; /* Assure une séparation avec le contenu */
+  }
+
+  /* --- Responsive (adapté de index.html) --- */
+  @media (max-width: 768px) {
+    .top-bar {
+        padding: 15px 20px;
+        justify-content: center;
+    }
+    
+    section {
+      padding: 30px 20px;
+      margin: 30px auto;
+    }
+
+    h2 {
+      font-size: 2em;
+    }
+    
+    #cvg-content h3 {
+        font-size: 1.4em;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Barre de navigation simple pour les pages secondaires -->
+<nav class="top-bar">
+  <a href="index.html" class="logo">Sourou Services</a>
+  <a href="index.html" class="cta-nav">
+    <i class="fa-solid fa-arrow-left"></i> Retour à l'accueil
+  </a>
+</nav>
+
+<main>
+  <section id="cvg">
+    <h2>Conditions Générales de Vente</h2>
+    
+    <div id="cvg-content">
+      <h3>1. Présentation</h3>
+      <p>Sourou Services est une entreprise de prestations numériques spécialisées dans la saisie, la mise en page et la conversion de documents Word et LaTeX. L’activité est exercée exclusivement en ligne : aucune boutique ni point d’accueil physique.</p>
+      <p>📧 E-mail : <a href="mailto:souroucenter@gmail.com">souroucenter@gmail.com</a></p>
+      <p>📱 WhatsApp : <a href="https://wa.me/22940639676" target="_blank" rel="noopener noreferrer">+229 01 40 63 96 76</a></p>
+      <p>(ci-après dénommée « le Prestataire »).</p>
+      <p>Les présentes Conditions Générales de Vente (CGV) régissent toutes les ventes et prestations réalisées entre Sourou Services et ses clients (ci-après « le Client »).</p>
+
+      <h3>2. Nature des prestations</h3>
+      <p>Sourou Services propose des prestations de saisie et de mise en forme de documents numériques, notamment :</p>
+      <ul>
+        <li>Saisie de documents manuscrits ou PDF (rapports, mémoires, supports de cours, thèses, etc.)</li>
+        <li>Mise en page, création de tableaux, insertion de figures et bibliographies</li>
+        <li>Conversion entre formats Word ↔ LaTeX ↔ PDF</li>
+        <li>Livraison électronique (par e-mail ou WhatsApp)</li>
+      </ul>
+      <p>Toutes les prestations sont réalisées à distance, sur la base des fichiers transmis par le Client.</p>
+
+      <h3>3. Commande et validation</h3>
+      <p>La commande se fait exclusivement en ligne, généralement via WhatsApp ou par e-mail. Une commande est considérée comme validée après :</p>
+      <ul>
+        <li>transmission des fichiers à traiter par le Client ;</li>
+        <li>indication du format souhaité (Word ou LaTeX) — le choix n’est plus modifiable après lancement de la saisie ;</li>
+        <li>confirmation du devis ou du tarif ;</li>
+        <li>versement de tout acompte ou paiement total convenu.</li>
+      </ul>
+      <p>Si le Client souhaite recevoir les deux formats (Word et LaTeX), chaque version est facturée séparément.</p>
+
+      <h3>4. Prévisualisation et validation</h3>
+      <p>Avant la livraison finale :</p>
+      <ul>
+        <li>Une version de prévisualisation (.pdf avec filigrane) est transmise au Client pour vérification.</li>
+        <li>Le Client dispose de 24 heures maximum pour demander des révisions gratuites, limitées aux erreurs ou oublis liés à la saisie initiale (ex. faute de frappe, erreur de mise en forme, etc.).</li>
+        <li>Passé ce délai, ou après validation expresse, la prestation est considérée comme acceptée et finalisée.</li>
+      </ul>
+      <p>Les révisions majeures (ajout de contenu, changement de format, reprise complète) seront facturées selon le tarif standard.</p>
+
+      <h3>5. Livraison finale</h3>
+      <p>Après validation de la prévisualisation et règlement complet de la facture, le Client reçoit :</p>
+      <ul>
+        <li>le document dans le format convenu (Word ou LaTeX) ;</li>
+        <li>éventuellement une version PDF finale à titre complémentaire.</li>
+      </ul>
+      <p>La livraison se fait uniquement par voie électronique (WhatsApp, e-mail ou autre canal numérique convenu). Aucune livraison physique n’est effectuée.</p>
+
+      <h3>6. Délais de livraison</h3>
+      <ul>
+        <li><strong>Saisie standard :</strong> livraison entre 24 et 48 heures après validation de la commande.</li>
+        <li><strong>Livraison urgente :</strong> livraison dans les 6 à 12 heures maximum après validation, moyennant une majoration de 20 à 30 %.</li>
+      </ul>
+      <p>Les délais sont donnés à titre indicatif et peuvent être ajustés selon la complexité ou le volume des documents.</p>
+
+      <h3>7. Tarifs et paiement</h3>
+      <p>Les tarifs sont exprimés en FCFA et précisés dans le devis, la facture ou sur le site. Le paiement s’effectue :</p>
+      <ul>
+        <li>par Mobile Money ou virement bancaire, aux coordonnées fournies sur la facture.</li>
+      </ul>
+      <p>La livraison finale est effectuée uniquement après paiement complet. En cas de paiement partiel, la version livrée reste filigranée jusqu’au règlement du solde.</p>
+
+      <h3>8. Annulation et droit de rétractation</h3>
+      <p>Les prestations de Sourou Services étant personnalisées et livrées sous forme numérique, le droit de rétractation ne s’applique pas une fois la saisie commencée.</p>
+      <p>Toute demande d’annulation avant le début effectif du travail pourra être étudiée, sans garantie de remboursement total.</p>
+
+      <h3>9. Révisions et réclamations</h3>
+      <p>Les révisions gratuites sont limitées à :</p>
+      <ul>
+        <li>des erreurs ou oublis imputables au Prestataire ;</li>
+        <li>demandées dans un délai de 24 heures maximum après réception de la version préliminaire.</li>
+      </ul>
+      <p>Les demandes hors de ce cadre sont considérées comme de nouvelles prestations.</p>
+
+      <h3>10. Confidentialité</h3>
+      <p>Sourou Services s’engage à assurer une confidentialité totale des fichiers transmis :</p>
+      <ul>
+        <li>aucun document n’est partagé sans autorisation écrite du Client ;</li>
+        <li>les fichiers sont supprimés après livraison finale, sauf accord contraire.</li>
+      </ul>
+
+      <h3>11. Responsabilité</h3>
+      <p>Le Prestataire s’engage à exécuter la prestation avec soin et professionnalisme. Sa responsabilité ne saurait être engagée en cas :</p>
+      <ul>
+        <li>d’erreur ou d’ambiguïté dans les fichiers transmis par le Client ;</li>
+        <li>de perte ou mauvaise utilisation du document par le Client après livraison ;</li>
+        <li>de retard causé par une absence de réponse ou de validation du Client.</li>
+      </ul>
+
+      <h3>12. Droit applicable et juridiction compétente</h3>
+      <p>Les présentes CGV sont soumises au droit béninois, ou à défaut, au droit OHADA applicable. Tout différend non résolu à l’amiable sera porté devant les tribunaux compétents du Bénin.</p>
+
+      <h3>13. Acceptation</h3>
+      <p>La commande d’une prestation auprès de Sourou Services vaut acceptation pleine et entière des présentes Conditions Générales de Vente.</p>
+    </div>
+  </section>
+</main>
+
+<!-- Pied de page (identique à index.html) -->
+<footer>
+  <p>&copy; 2025 Sourou Services. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
